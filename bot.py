@@ -21,7 +21,20 @@ moa_yad = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 moment_worker = []
 
 
-#start
+
+#هنا رسالة الستارت
+#تكدر اتغير الرد مالتها 
+#تشوف النجمه 
+#امسح بس 🌟
+#""وحط الرد بدون ما تمسح الـ
+#ب
+#
+#
+#
+#
+
+#
+
 @moa_yad.on(events.NewMessage(pattern="/start"))
 async def start(event):
   await event.reply("رساله الستارت",
