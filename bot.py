@@ -27,17 +27,21 @@ moment_worker = []
 #تشوف النجمه 
 #امسح بس 🌟
 #""وحط الرد بدون ما تمسح الـ
-#ب
-#
-#
-#
-#
 
-#
 
 @moa_yad.on(events.NewMessage(pattern="/start"))
 async def start(event):
   await event.reply("رساله الستارت",
+                    link_preview=False
+                   )
+
+#هنا الردود انته ومخك
+#النجمه هيه الرد
+
+
+@moa_yad.on(events.NewMessage(pattern="كلمه"))
+async def start(event):
+  await event.reply("🌟",
                     link_preview=False
                    )
 
