@@ -22,14 +22,9 @@ moment_worker = []
 
 
 #start
-@xavierbot.on(events.NewMessage(pattern="^/start$"))
+@xavierbot.on(events.NewMessage(pattern="/start"))
 async def start(event):
   await event.reply("رساله الستارت",
-                    buttons=(
-                      [
-                        Button.url('مكان زر', 'مكان رابط'),   
-                      ]
-                   ), 
                     link_preview=False
                    )
 
