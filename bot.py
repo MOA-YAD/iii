@@ -28,19 +28,6 @@ async def start(event):
                     link_preview=False
                    )
 
-# 
-@xavierbot.on(events.NewMessage(pattern="اخ"))
-async def help(event):
-  helptext = "الرد"
-  await event.reply(helptext,
-                    buttons=(
-                      [
-                        Button.url('مطور البوت', 'https://t.me/MOA_YAD'),   
-                      ]
-                   ), 
-                    link_preview=False
-                   )
-
 
 print("تم تنصيب بوت التاك بنجاح 💕🍂")
 print("لو محتاج مساعده @MOA_YAF")
