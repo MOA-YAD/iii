@@ -16,19 +16,19 @@ LOGGER = logging.getLogger(__name__)
 api_id = int(os.environ.get("APP_ID"))
 api_hash = os.environ.get("API_HASH")
 bot_token = os.environ.get("TOKEN")
-xavierbot = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
+moa_yad = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
 
 moment_worker = []
 
 
 #start
-@xavierbot.on(events.NewMessage(pattern="/start"))
+@moa_yad.on(events.NewMessage(pattern="/start"))
 async def start(event):
   await event.reply("رساله الستارت",
                     link_preview=False
                    )
 
 
-print("تم تنصيب بوت التاك بنجاح 💕🍂")
+print("تم تنصيب بوت التاك بنجاح")
 print("لو محتاج مساعده @MOA_YAF")
-xavierbot.run_until_disconnected()
+moa_yad.run_until_disconnected()
