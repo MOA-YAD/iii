@@ -33,8 +33,8 @@ async def start(event):
                     link_preview=False
                    )
 
-#help
-@xavierbot.on(events.NewMessage(pattern="^مكان كلمه مردود عليها$"))
+# 
+@xavierbot.on(events.NewMessage(pattern="اخ"))
 async def help(event):
   helptext = "الرد"
   await event.reply(helptext,
